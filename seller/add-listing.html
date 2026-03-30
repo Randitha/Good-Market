@@ -1,0 +1,30 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="gm-depth" content="../"><meta name="gm-active" content=""><title>Add Listing — Good Market</title><link rel="stylesheet" href="../assets/css/design-system.css"></head>
+<style>.sell-link{display:flex;align-items:center;gap:10px;padding:10px 24px;font-size:14px;color:var(--gm-earth-600);text-decoration:none}.sell-link.active{background:var(--gm-green-50);color:var(--gm-green-700);font-weight:600;border-left:3px solid var(--gm-green-500)}.upload-zone{border:2px dashed var(--gm-earth-300);border-radius:var(--radius-lg);padding:40px;text-align:center;cursor:pointer;transition:all .2s}.upload-zone:hover{border-color:var(--gm-green-400);background:var(--gm-green-50)}</style>
+<body><div id="gm-nav"></div><div style="display:flex"><aside style="width:260px;background:#fff;border-right:1px solid var(--gm-earth-200);min-height:calc(100vh - 72px);padding:24px 0;position:sticky;top:72px;flex-shrink:0"><div style="display:flex;align-items:center;gap:12px;padding:16px 20px 20px;border-bottom:1px solid var(--gm-earth-100);margin-bottom:16px"><div style="width:40px;height:40px;border-radius:8px;background:var(--gm-green-100);display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--gm-green-700);font-size:14px">GH</div><div><strong style="font-size:14px">Green Harvest</strong><p style="font-size:11px;color:var(--gm-earth-500)">Enterprise Account</p></div></div><a href="dashboard.html" class="sell-link">📊 Dashboard</a><a href="listings.html" class="sell-link">📦 My Listings</a><a href="add-listing.html" class="sell-link  active">➕ Add Listing</a><a href="orders.html" class="sell-link">🛒 Orders</a><a href="analytics.html" class="sell-link">📈 Analytics</a><a href="profile-edit.html" class="sell-link">✏️ Edit Profile</a><a href="feedback.html" class="sell-link">⭐ Feedback</a><a href="network-manage.html" class="sell-link">🌐 Networks</a><a href="subscription.html" class="sell-link">💳 Subscription</a><a href="apply.html" class="sell-link">📋 Application</a><a href="settings.html" class="sell-link">⚙️ Settings</a></aside>
+<main class="page-content">
+  <h1 class="page-title">Add New Listing</h1><p class="page-subtitle" style="margin-bottom:32px">Create a marketplace listing for your product, service, event, or campaign</p>
+  <div style="max-width:720px">
+    <div style="background:#fff;border:1px solid var(--gm-earth-200);border-radius:var(--radius-lg);padding:28px;margin-bottom:24px">
+      <h3 style="font-size:16px;font-family:var(--font-body);margin-bottom:20px">Listing Type</h3>
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:12px">
+        <div style="padding:16px;border:2px solid var(--gm-green-500);border-radius:var(--radius-md);text-align:center;background:var(--gm-green-50);cursor:pointer"><div style="font-size:24px;margin-bottom:4px">🛍</div><strong style="font-size:13px">Product</strong></div>
+        <div style="padding:16px;border:2px solid var(--gm-earth-200);border-radius:var(--radius-md);text-align:center;cursor:pointer"><div style="font-size:24px;margin-bottom:4px">🔧</div><strong style="font-size:13px">Service</strong></div>
+        <div style="padding:16px;border:2px solid var(--gm-earth-200);border-radius:var(--radius-md);text-align:center;cursor:pointer"><div style="font-size:24px;margin-bottom:4px">📅</div><strong style="font-size:13px">Event</strong></div>
+        <div style="padding:16px;border:2px solid var(--gm-earth-200);border-radius:var(--radius-md);text-align:center;cursor:pointer"><div style="font-size:24px;margin-bottom:4px">📢</div><strong style="font-size:13px">Campaign</strong></div>
+      </div>
+    </div>
+    <div style="background:#fff;border:1px solid var(--gm-earth-200);border-radius:var(--radius-lg);padding:28px;margin-bottom:24px">
+      <h3 style="font-size:16px;font-family:var(--font-body);margin-bottom:20px">Basic Information</h3>
+      <div class="form-group" style="margin-bottom:16px"><label class="form-label">Title</label><input class="form-input" placeholder="E.g. True Ceylon Cinnamon Sticks — 100g"></div>
+      <div class="form-group" style="margin-bottom:16px"><label class="form-label">Category</label><select class="form-select" style="width:100%"><option>Select category</option><option>Shop (B2C)</option><option>Source (B2B)</option></select></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px"><div class="form-group"><label class="form-label">Price (USD)</label><input class="form-input" type="number" placeholder="0.00"></div><div class="form-group"><label class="form-label">Stock Quantity</label><input class="form-input" type="number" placeholder="100"></div></div>
+      <div class="form-group" style="margin-bottom:16px"><label class="form-label">Description</label><textarea class="form-textarea" rows="4" placeholder="Describe your product, including how it meets minimum standards and how people and the planet are prioritized..."></textarea></div>
+      <div class="form-group"><label class="form-label">Keywords</label><input class="form-input" placeholder="organic, cinnamon, sri lanka, fair trade"></div>
+    </div>
+    <div style="background:#fff;border:1px solid var(--gm-earth-200);border-radius:var(--radius-lg);padding:28px;margin-bottom:24px">
+      <h3 style="font-size:16px;font-family:var(--font-body);margin-bottom:20px">Images</h3>
+      <div class="upload-zone"><div style="font-size:36px;margin-bottom:8px">📸</div><p style="font-size:14px;color:var(--gm-earth-600);margin-bottom:4px">Drop images here or click to upload</p><p style="font-size:12px;color:var(--gm-earth-400)">Square format recommended • Max 5 images • JPG, PNG</p></div>
+    </div>
+    <div style="display:flex;gap:12px;justify-content:flex-end"><button class="btn btn-secondary">Save as Draft</button><button class="btn btn-primary">Publish Listing</button></div>
+  </div>
+</main></div><div id="gm-footer"></div><script src="../assets/js/components.js"></script></body></html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="gm-depth" content="../"><meta name="gm-active" content=""><title>My Orders — Good Market</title><link rel="stylesheet" href="../assets/css/design-system.css">
+<style>.dash-sidebar{width:260px;background:#fff;border-right:1px solid var(--gm-earth-200);min-height:calc(100vh - 72px);padding:24px 0;position:sticky;top:72px}.dash-user{padding:0 20px 20px;border-bottom:1px solid var(--gm-earth-100);margin-bottom:16px;display:flex;align-items:center;gap:12px}.dash-link{display:flex;align-items:center;gap:10px;padding:10px 24px;font-size:14px;color:var(--gm-earth-600);text-decoration:none;transition:all .15s}.dash-link:hover{background:var(--gm-green-50);color:var(--gm-green-700)}.dash-link.active{background:var(--gm-green-50);color:var(--gm-green-700);font-weight:600;border-left:3px solid var(--gm-green-500)}.order-card{background:#fff;border:1px solid var(--gm-earth-200);border-radius:var(--radius-lg);padding:20px;margin-bottom:16px;transition:all .2s}.order-card:hover{box-shadow:var(--shadow-md)}.order-status{display:inline-flex;align-items:center;gap:4px;padding:4px 10px;border-radius:var(--radius-full);font-size:12px;font-weight:600}</style></head><body><div id="gm-nav"></div>
+<div style="display:flex">
+  <aside class="dash-sidebar">
+    <div class="dash-user"><div style="width:40px;height:40px;border-radius:50%;background:var(--gm-green-200);display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--gm-green-800)">JD</div><div><strong style="font-size:14px">John Doe</strong><p style="font-size:11px;color:var(--gm-earth-500)">Personal Account</p></div></div>
+    <a href="dashboard.html" class="dash-link">📊 Dashboard</a><a href="favorites.html" class="dash-link">♡ Favorites</a><a href="orders.html" class="dash-link active">📦 My Orders</a><a href="cart.html" class="dash-link">🛒 Cart</a><a href="messages.html" class="dash-link">💬 Messages</a><a href="following.html" class="dash-link">👥 Following</a><a href="reviews.html" class="dash-link">⭐ My Reviews</a><a href="settings.html" class="dash-link">⚙️ Settings</a>
+  </aside>
+  <main class="page-content">
+    <div class="page-header"><h1 class="page-title">My Orders</h1><p class="page-subtitle">Track and manage your purchases</p></div>
+    <div class="tabs" style="margin-bottom:24px"><a class="tab active">All Orders</a><a class="tab">Processing (1)</a><a class="tab">Shipped (1)</a><a class="tab">Delivered (3)</a></div>
+    <div class="order-card">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px">
+        <div><strong style="font-size:14px">#GM-2026-4821</strong><span style="font-size:12px;color:var(--gm-earth-500);margin-left:12px">March 18, 2026</span></div>
+        <span class="order-status" style="background:var(--gm-amber-100);color:var(--gm-amber-600)">⏳ Processing</span>
+      </div>
+      <div style="display:flex;gap:12px;align-items:center">
+        <img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=80&h=80&fit=crop" style="width:56px;height:56px;border-radius:8px;object-fit:cover" alt="">
+        <img src="https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?w=80&h=80&fit=crop" style="width:56px;height:56px;border-radius:8px;object-fit:cover" alt="">
+        <div style="margin-left:8px"><p style="font-size:14px;font-weight:500">3 items from 2 enterprises</p><p style="font-size:13px;color:var(--gm-earth-500)">Green Harvest Organics, Artisan Collective</p></div>
+        <div style="margin-left:auto;text-align:right"><strong style="font-size:16px;color:var(--gm-green-700)">$62.00</strong><br><a href="order-detail.html" style="font-size:12px">View Details →</a></div>
+      </div>
+    </div>
+    <div class="order-card">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px">
+        <div><strong style="font-size:14px">#GM-2026-4756</strong><span style="font-size:12px;color:var(--gm-earth-500);margin-left:12px">March 10, 2026</span></div>
+        <span class="order-status" style="background:var(--gm-sky-100);color:var(--gm-sky-600)">🚚 Shipped</span>
+      </div>
+      <div style="display:flex;gap:12px;align-items:center">
+        <img src="https://images.unsplash.com/photo-1607004468138-e7e23ea26947?w=80&h=80&fit=crop" style="width:56px;height:56px;border-radius:8px;object-fit:cover" alt="">
+        <div style="margin-left:8px"><p style="font-size:14px;font-weight:500">1 item</p><p style="font-size:13px;color:var(--gm-earth-500)">Ceylon Tea Gardens</p></div>
+        <div style="margin-left:auto;text-align:right"><strong style="font-size:16px;color:var(--gm-green-700)">$15.00</strong><br><a href="order-detail.html" style="font-size:12px">Track Package →</a></div>
+      </div>
+    </div>
+    <div class="order-card">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px">
+        <div><strong style="font-size:14px">#GM-2026-4612</strong><span style="font-size:12px;color:var(--gm-earth-500);margin-left:12px">Feb 28, 2026</span></div>
+        <span class="order-status" style="background:var(--gm-green-100);color:var(--gm-green-700)">✓ Delivered</span>
+      </div>
+      <div style="display:flex;gap:12px;align-items:center">
+        <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=80&h=80&fit=crop" style="width:56px;height:56px;border-radius:8px;object-fit:cover" alt="">
+        <div style="margin-left:8px"><p style="font-size:14px;font-weight:500">1 item</p><p style="font-size:13px;color:var(--gm-earth-500)">Green Time Co.</p></div>
+        <div style="margin-left:auto;text-align:right"><strong style="font-size:16px;color:var(--gm-green-700)">$45.00</strong><br><a href="#" style="font-size:12px">Leave Review →</a></div>
+      </div>
+    </div>
+  </main>
+</div>
+<div id="gm-footer"></div><script src="../assets/js/components.js"></script></body></html>

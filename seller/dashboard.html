@@ -1,0 +1,53 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="gm-depth" content="../"><title>Seller Dashboard — Good Market</title><link rel="stylesheet" href="../assets/css/design-system.css">
+<style>.sell-sidebar{width:260px;background:#fff;border-right:1px solid var(--gm-earth-200);min-height:calc(100vh - 72px);padding:24px 0;position:sticky;top:72px}.sell-user{padding:0 20px 20px;border-bottom:1px solid var(--gm-earth-100);margin-bottom:16px}.sell-link{display:flex;align-items:center;gap:10px;padding:10px 24px;font-size:14px;color:var(--gm-earth-600);text-decoration:none;transition:all .15s}.sell-link:hover{background:var(--gm-green-50);color:var(--gm-green-700)}.sell-link.active{background:var(--gm-green-50);color:var(--gm-green-700);font-weight:600;border-left:3px solid var(--gm-green-500)}.metric-card{background:#fff;border:1px solid var(--gm-earth-200);border-radius:var(--radius-lg);padding:24px}.metric-val{font-family:var(--font-display);font-size:32px;color:var(--gm-green-600)}.metric-label{font-size:13px;color:var(--gm-earth-500);margin-top:4px}.metric-change{font-size:12px;font-weight:600;margin-top:8px}.metric-up{color:var(--gm-green-600)}.metric-down{color:var(--gm-coral-500)}.chart-placeholder{background:var(--gm-earth-50);border:2px dashed var(--gm-earth-200);border-radius:var(--radius-lg);height:240px;display:flex;align-items:center;justify-content:center;color:var(--gm-earth-400);font-size:14px}</style></head><body><div id="gm-nav"></div>
+<div style="display:flex">
+  <aside class="sell-sidebar">
+    <div class="sell-user" style="display:flex;align-items:center;gap:12px;padding:16px 20px 20px">
+      <div style="width:40px;height:40px;border-radius:var(--radius-sm);background:var(--gm-green-100);display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--gm-green-700);font-size:14px">GH</div>
+      <div><strong style="font-size:14px">Green Harvest</strong><p style="font-size:11px;color:var(--gm-earth-500)">Enterprise Account</p></div>
+    </div>
+    <a href="dashboard.html" class="sell-link active">📊 Dashboard</a>
+    <a href="listings.html" class="sell-link">📦 My Listings</a>
+    <a href="add-listing.html" class="sell-link">➕ Add Listing</a>
+    <a href="orders.html" class="sell-link">🛒 Orders</a>
+    <a href="analytics.html" class="sell-link">📈 Analytics</a>
+    <a href="profile-edit.html" class="sell-link">✏️ Edit Profile</a>
+    <a href="feedback.html" class="sell-link">⭐ Feedback</a>
+    <a href="network-manage.html" class="sell-link">🌐 Networks</a>
+    <a href="subscription.html" class="sell-link">💳 Subscription</a>
+    <a href="apply.html" class="sell-link">📋 Application</a>
+    <a href="settings.html" class="sell-link">⚙️ Settings</a>
+  </aside>
+  <main class="page-content">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:32px">
+      <div><h1 class="page-title">Seller Dashboard</h1><p class="page-subtitle">Welcome back, Green Harvest Organics</p></div>
+      <div style="display:flex;gap:8px"><a href="add-listing.html" class="btn btn-primary btn-sm">+ Add Listing</a><a href="../public/enterprise-profile.html" class="btn btn-secondary btn-sm">View Profile</a></div>
+    </div>
+    <!-- Metrics -->
+    <div class="grid grid-4 gap-4" style="margin-bottom:32px">
+      <div class="metric-card"><div class="metric-val">$2,847</div><div class="metric-label">Revenue this month</div><div class="metric-change metric-up">↑ 12.3% vs last month</div></div>
+      <div class="metric-card"><div class="metric-val">48</div><div class="metric-label">Orders this month</div><div class="metric-change metric-up">↑ 8 more than last month</div></div>
+      <div class="metric-card"><div class="metric-val">312</div><div class="metric-label">Profile followers</div><div class="metric-change metric-up">↑ 24 new this month</div></div>
+      <div class="metric-card"><div class="metric-val">4.9</div><div class="metric-label">Average rating</div><div class="metric-change metric-up">★★★★★ (48 reviews)</div></div>
+    </div>
+    <!-- Charts row -->
+    <div class="grid grid-2 gap-6" style="margin-bottom:32px">
+      <div style="background:#fff;border:1px solid var(--gm-earth-200);border-radius:var(--radius-lg);padding:24px"><h3 style="font-size:16px;font-family:var(--font-body);margin-bottom:16px">Revenue Overview</h3><div class="chart-placeholder">📊 Revenue chart — interactive chart will render here</div></div>
+      <div style="background:#fff;border:1px solid var(--gm-earth-200);border-radius:var(--radius-lg);padding:24px"><h3 style="font-size:16px;font-family:var(--font-body);margin-bottom:16px">Order Trends</h3><div class="chart-placeholder">📈 Order trend chart — interactive chart will render here</div></div>
+    </div>
+    <!-- Recent Orders -->
+    <div style="background:#fff;border:1px solid var(--gm-earth-200);border-radius:var(--radius-lg);padding:24px">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px"><h3 style="font-size:16px;font-family:var(--font-body)">Recent Orders</h3><a href="orders.html" style="font-size:13px">View all →</a></div>
+      <table class="data-table">
+        <thead><tr><th>Order ID</th><th>Customer</th><th>Items</th><th>Total</th><th>Status</th><th>Date</th></tr></thead>
+        <tbody>
+          <tr><td><a href="order-detail.html" style="font-weight:600">#GM-4821</a></td><td>Jane Doe</td><td>Ceylon Cinnamon × 2</td><td>$25.00</td><td><span class="badge badge-green">Shipped</span></td><td>Mar 16, 2026</td></tr>
+          <tr><td><a href="order-detail.html" style="font-weight:600">#GM-4819</a></td><td>Marco P.</td><td>Black Pepper × 3</td><td>$27.00</td><td><span class="badge badge-amber">Processing</span></td><td>Mar 15, 2026</td></tr>
+          <tr><td><a href="order-detail.html" style="font-weight:600">#GM-4815</a></td><td>Sarah K.</td><td>Cinnamon + Cloves</td><td>$19.75</td><td><span class="badge badge-sky">Pending</span></td><td>Mar 14, 2026</td></tr>
+          <tr><td><a href="order-detail.html" style="font-weight:600">#GM-4810</a></td><td>Ahmed R.</td><td>Bulk Cinnamon 1kg</td><td>$89.00</td><td><span class="badge badge-green">Delivered</span></td><td>Mar 12, 2026</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+</div>
+<div id="gm-footer"></div><script src="../assets/js/components.js"></script></body></html>

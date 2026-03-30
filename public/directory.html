@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="gm-depth" content="../"><meta name="gm-active" content="directory">
+  <title>Enterprise Directory — Good Market</title>
+  <link rel="stylesheet" href="../assets/css/design-system.css">
+  <style>
+    .dir-header { background: linear-gradient(135deg, var(--gm-green-900), var(--gm-green-700)); padding: 60px 0; color: #fff; text-align: center; }
+    .dir-search { max-width: 600px; margin: 24px auto 0; display: flex; background: #fff; border-radius: 50px; padding: 4px; box-shadow: 0 10px 40px rgba(0,0,0,.15); }
+    .dir-search input { flex: 1; border: none; padding: 14px 20px; font-size: 15px; outline: none; border-radius: 50px; }
+    .dir-search select { border: none; background: none; padding: 0 12px; font-size: 14px; color: var(--gm-earth-600); border-left: 1px solid var(--gm-earth-200); }
+    .dir-search button { padding: 12px 28px; background: var(--gm-green-600); color: #fff; border: none; border-radius: 50px; font-weight: 600; cursor: pointer; }
+    .ent-card { background: #fff; border: 1px solid var(--gm-earth-200); border-radius: var(--radius-lg); padding: 20px; display: flex; gap: 16px; transition: all .25s; }
+    .ent-card:hover { box-shadow: var(--shadow-lg); border-color: var(--gm-green-200); transform: translateY(-2px); }
+    .ent-logo { width: 64px; height: 64px; border-radius: var(--radius-md); background: var(--gm-green-100); display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 20px; color: var(--gm-green-700); flex-shrink: 0; }
+  </style>
+</head>
+<body>
+<div id="gm-nav"></div>
+<div class="dir-header">
+  <h1 style="font-size:36px;margin-bottom:8px">Enterprise Directory</h1>
+  <p style="opacity:.8;font-size:16px">Find Good Market approved social enterprises and changemakers</p>
+  <div class="dir-search">
+    <input type="text" placeholder="Search by name, sector, or location...">
+    <select><option>All Countries</option><option>Sri Lanka</option><option>Kenya</option><option>India</option><option>Netherlands</option></select>
+    <button>Search</button>
+  </div>
+</div>
+
+<div class="container" style="padding-top:32px;padding-bottom:60px">
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:24px">
+    <span style="font-size:14px;color:var(--gm-earth-500)">Showing <strong>4,832</strong> enterprises</span>
+    <div style="display:flex;gap:8px">
+      <select class="form-select" style="font-size:13px;padding:6px 12px"><option>Sort: Relevance</option><option>Newest</option><option>Most Followed</option><option>Highest Rated</option></select>
+      <div class="view-toggle" style="display:flex;background:var(--gm-earth-100);border-radius:var(--radius-md);padding:3px"><button class="active" style="padding:6px 10px;border:none;background:#fff;border-radius:var(--radius-sm);cursor:pointer;box-shadow:var(--shadow-xs)">Grid</button><button style="padding:6px 10px;border:none;background:none;cursor:pointer">List</button><button style="padding:6px 10px;border:none;background:none;cursor:pointer">Map</button></div>
+    </div>
+  </div>
+  <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:24px">
+    <span class="tag" style="cursor:pointer">🍎 Food</span><span class="tag" style="cursor:pointer">👗 Fashion</span><span class="tag" style="cursor:pointer">💆 Wellness</span><span class="tag" style="cursor:pointer">🎨 Crafts</span><span class="tag" style="cursor:pointer">💡 Tech</span><span class="tag" style="cursor:pointer">🏕 Travel</span><span class="tag" style="cursor:pointer">📚 Education</span><span class="tag" style="cursor:pointer">🏗 Services</span>
+  </div>
+  <div class="grid grid-2 gap-4">
+    <a href="enterprise-profile.html" class="ent-card" style="text-decoration:none;color:inherit"><div class="ent-logo">GH</div><div><div style="display:flex;align-items:center;gap:6px;margin-bottom:4px"><strong style="font-size:15px">Green Harvest Organics</strong><span class="badge badge-green" style="font-size:11px">Level 4</span></div><p class="text-sm text-muted">Organic spices & produce • Ratnapura, Sri Lanka</p><div style="display:flex;gap:6px;margin-top:8px"><span class="badge badge-green" style="font-size:10px">Organic</span><span class="badge badge-amber" style="font-size:10px">Fair Trade</span></div></div></a>
+    <a href="enterprise-profile.html" class="ent-card" style="text-decoration:none;color:inherit"><div class="ent-logo" style="background:var(--gm-amber-100);color:var(--gm-amber-600)">AC</div><div><div style="display:flex;align-items:center;gap:6px;margin-bottom:4px"><strong style="font-size:15px">Artisan Collective</strong><span class="badge badge-green" style="font-size:11px">Level 5</span></div><p class="text-sm text-muted">Handmade crafts & textiles • Nairobi, Kenya</p><div style="display:flex;gap:6px;margin-top:8px"><span class="badge badge-amber" style="font-size:10px">Fair Trade</span><span class="badge badge-sky" style="font-size:10px">Women-Led</span></div></div></a>
+    <a href="enterprise-profile.html" class="ent-card" style="text-decoration:none;color:inherit"><div class="ent-logo" style="background:var(--gm-sky-100);color:var(--gm-sky-600)">ZW</div><div><div style="display:flex;align-items:center;gap:6px;margin-bottom:4px"><strong style="font-size:15px">Zero Waste Co.</strong><span class="badge badge-green" style="font-size:11px">Level 3</span></div><p class="text-sm text-muted">Sustainable packaging • Amsterdam, Netherlands</p><div style="display:flex;gap:6px;margin-top:8px"><span class="badge badge-sky" style="font-size:10px">B-Corp</span><span class="badge badge-green" style="font-size:10px">Zero Waste</span></div></div></a>
+    <a href="enterprise-profile.html" class="ent-card" style="text-decoration:none;color:inherit"><div class="ent-logo" style="background:var(--gm-coral-100);color:var(--gm-coral-600)">NT</div><div><div style="display:flex;align-items:center;gap:6px;margin-bottom:4px"><strong style="font-size:15px">Nature's Touch Ayurveda</strong><span class="badge badge-green" style="font-size:11px">Level 4</span></div><p class="text-sm text-muted">Wellness products & essential oils • Kerala, India</p><div style="display:flex;gap:6px;margin-top:8px"><span class="badge badge-green" style="font-size:10px">Organic</span><span class="badge badge-amber" style="font-size:10px">Ayurvedic</span></div></div></a>
+    <a href="enterprise-profile.html" class="ent-card" style="text-decoration:none;color:inherit"><div class="ent-logo" style="background:#E8F5E9;color:#2E7D32">GT</div><div><div style="display:flex;align-items:center;gap:6px;margin-bottom:4px"><strong style="font-size:15px">Green Time Co.</strong><span class="badge badge-green" style="font-size:11px">Level 3</span></div><p class="text-sm text-muted">Sustainable accessories • Lisbon, Portugal</p><div style="display:flex;gap:6px;margin-top:8px"><span class="badge badge-sky" style="font-size:10px">Eco-Friendly</span></div></div></a>
+    <a href="enterprise-profile.html" class="ent-card" style="text-decoration:none;color:inherit"><div class="ent-logo" style="background:#FFF3E0;color:#E65100">CT</div><div><div style="display:flex;align-items:center;gap:6px;margin-bottom:4px"><strong style="font-size:15px">Ceylon Tea Gardens</strong><span class="badge badge-green" style="font-size:11px">Level 5</span></div><p class="text-sm text-muted">Organic tea estates • Nuwara Eliya, Sri Lanka</p><div style="display:flex;gap:6px;margin-top:8px"><span class="badge badge-green" style="font-size:10px">Organic PGS</span><span class="badge badge-amber" style="font-size:10px">Fair Trade</span></div></div></a>
+  </div>
+  <div style="display:flex;justify-content:center;gap:8px;margin-top:40px">
+    <button class="btn btn-ghost btn-sm" disabled>← Previous</button><button class="btn btn-sm btn-primary">1</button><button class="btn btn-sm btn-ghost">2</button><button class="btn btn-sm btn-ghost">3</button><span style="color:var(--gm-earth-400)">...</span><button class="btn btn-sm btn-ghost">81</button><button class="btn btn-sm btn-ghost">Next →</button>
+  </div>
+</div>
+<div id="gm-footer"></div>
+<script src="../assets/js/components.js"></script>
+</body></html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="gm-depth" content="../"><title>Checkout — Good Market</title><link rel="stylesheet" href="../assets/css/design-system.css">
+<style>.ck-layout{max-width:1100px;margin:0 auto;padding:32px 24px;display:grid;grid-template-columns:1fr 380px;gap:40px}.ck-section{background:#fff;border:1px solid var(--gm-earth-200);border-radius:var(--radius-lg);padding:28px;margin-bottom:20px}.ck-section h3{font-size:16px;font-family:var(--font-body);font-weight:600;margin-bottom:16px;display:flex;align-items:center;gap:8px}.ck-step{width:28px;height:28px;border-radius:50%;background:var(--gm-green-600);color:#fff;display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700}.summary-card{background:#fff;border:1px solid var(--gm-earth-200);border-radius:var(--radius-xl);padding:28px;position:sticky;top:96px}.summary-item{display:flex;gap:12px;padding:12px 0;border-bottom:1px solid var(--gm-earth-100)}.summary-row{display:flex;justify-content:space-between;padding:8px 0;font-size:14px}.pay-option{display:flex;align-items:center;gap:12px;padding:14px;border:2px solid var(--gm-earth-200);border-radius:var(--radius-md);cursor:pointer;transition:all .2s;margin-bottom:8px}.pay-option:hover{border-color:var(--gm-green-300)}.pay-option.selected{border-color:var(--gm-green-500);background:var(--gm-green-50)}</style></head><body><div id="gm-nav"></div>
+<div style="background:var(--gm-earth-50);padding-bottom:60px">
+<div class="ck-layout">
+  <div>
+    <h1 style="font-size:26px;margin-bottom:24px">Checkout</h1>
+    <!-- Step 1: Shipping -->
+    <div class="ck-section"><h3><span class="ck-step">1</span> Shipping Address</h3>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px"><div class="form-group"><label class="form-label">First name</label><input class="form-input" value="John"></div><div class="form-group"><label class="form-label">Last name</label><input class="form-input" value="Doe"></div></div>
+      <div class="form-group" style="margin-top:12px"><label class="form-label">Street address</label><input class="form-input" placeholder="123 Main Street"></div>
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:12px;margin-top:12px"><div class="form-group"><label class="form-label">City</label><input class="form-input" placeholder="Colombo"></div><div class="form-group"><label class="form-label">Postal code</label><input class="form-input" placeholder="10100"></div><div class="form-group"><label class="form-label">Country</label><select class="form-select" style="width:100%"><option>Sri Lanka</option></select></div></div>
+    </div>
+    <!-- Step 2: Payment -->
+    <div class="ck-section"><h3><span class="ck-step">2</span> Payment Method</h3>
+      <div class="pay-option selected"><input type="radio" name="pay" checked><span style="font-size:14px;font-weight:500">💳 Credit / Debit Card</span></div>
+      <div class="pay-option"><input type="radio" name="pay"><span style="font-size:14px;font-weight:500">🅿️ PayPal</span></div>
+      <div class="pay-option"><input type="radio" name="pay"><span style="font-size:14px;font-weight:500">🏦 Bank Transfer</span></div>
+      <div style="margin-top:16px;display:grid;grid-template-columns:1fr 1fr;gap:12px"><div class="form-group" style="grid-column:span 2"><label class="form-label">Card number</label><input class="form-input" placeholder="1234 5678 9012 3456"></div><div class="form-group"><label class="form-label">Expiry</label><input class="form-input" placeholder="MM/YY"></div><div class="form-group"><label class="form-label">CVV</label><input class="form-input" placeholder="123"></div></div>
+    </div>
+    <!-- Step 3: Review -->
+    <div class="ck-section"><h3><span class="ck-step">3</span> Review & Place Order</h3>
+      <p style="font-size:13px;color:var(--gm-earth-600);margin-bottom:16px">By placing this order, you agree to Good Market's Terms of Service and acknowledge the shipping policies of each seller.</p>
+      <button class="btn btn-primary btn-lg" style="width:100%" onclick="window.location='order-confirmation.html'">Place Order — $62.00</button>
+    </div>
+  </div>
+  <div>
+    <div class="summary-card">
+      <h3 style="font-size:16px;margin-bottom:16px">Order Summary</h3>
+      <div class="summary-item"><img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=80&h=80&fit=crop" style="width:48px;height:48px;border-radius:6px;object-fit:cover" alt=""><div><p style="font-size:13px;font-weight:500">Ceylon Cinnamon × 2</p><p style="font-size:12px;color:var(--gm-earth-500)">$25.00</p></div></div>
+      <div class="summary-item"><img src="https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?w=80&h=80&fit=crop" style="width:48px;height:48px;border-radius:6px;object-fit:cover" alt=""><div><p style="font-size:13px;font-weight:500">Jute Tote Bag × 1</p><p style="font-size:12px;color:var(--gm-earth-500)">$28.00</p></div></div>
+      <div class="summary-item"><img src="https://images.unsplash.com/photo-1607004468138-e7e23ea26947?w=80&h=80&fit=crop" style="width:48px;height:48px;border-radius:6px;object-fit:cover" alt=""><div><p style="font-size:13px;font-weight:500">Organic Black Pepper × 1</p><p style="font-size:12px;color:var(--gm-earth-500)">$9.00</p></div></div>
+      <div class="summary-row" style="margin-top:12px"><span>Subtotal</span><strong>$62.00</strong></div>
+      <div class="summary-row"><span>Shipping</span><span style="color:var(--gm-green-600);font-weight:600">Free</span></div>
+      <div class="summary-row" style="border-top:2px solid var(--gm-earth-200);padding-top:12px;margin-top:8px"><strong>Total</strong><strong style="color:var(--gm-green-700);font-size:18px">$62.00</strong></div>
+    </div>
+  </div>
+</div></div>
+<div id="gm-footer"></div><script src="../assets/js/components.js"></script></body></html>

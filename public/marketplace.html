@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="gm-depth" content="../"><meta name="gm-active" content="marketplace">
+  <title>Marketplace — Good Market</title>
+  <link rel="stylesheet" href="../assets/css/design-system.css">
+  <style>
+    .mp-layout { display: flex; gap: 0; min-height: calc(100vh - 72px); }
+    .mp-filters { width: 280px; background: #fff; border-right: 1px solid var(--gm-earth-200); padding: 24px; flex-shrink: 0; position: sticky; top: 72px; height: calc(100vh - 72px); overflow-y: auto; }
+    .mp-main { flex: 1; padding: 32px; }
+    .filter-section { margin-bottom: 28px; }
+    .filter-title { font-size: 13px; font-weight: 700; color: var(--gm-earth-700); margin-bottom: 12px; text-transform: uppercase; letter-spacing: .04em; }
+    .filter-option { display: flex; align-items: center; gap: 8px; padding: 6px 0; font-size: 14px; color: var(--gm-earth-600); cursor: pointer; }
+    .filter-option input[type="checkbox"] { width: 16px; height: 16px; accent-color: var(--gm-green-600); }
+    .filter-option .count { margin-left: auto; font-size: 12px; color: var(--gm-earth-400); }
+    .mp-topbar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 24px; }
+    .view-toggle { display: flex; background: var(--gm-earth-100); border-radius: var(--radius-md); padding: 3px; }
+    .view-toggle button { padding: 6px 10px; border: none; background: none; border-radius: var(--radius-sm); cursor: pointer; color: var(--gm-earth-500); }
+    .view-toggle button.active { background: #fff; color: var(--gm-green-700); box-shadow: var(--shadow-xs); }
+    .product-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .price-range { display: flex; gap: 8px; align-items: center; }
+    .price-range input { width: 80px; padding: 6px 10px; border: 1px solid var(--gm-earth-300); border-radius: var(--radius-sm); font-size: 13px; }
+  </style>
+</head>
+<body>
+<div id="gm-nav"></div>
+
+<div class="mp-layout">
+  <!-- FILTERS SIDEBAR -->
+  <aside class="mp-filters">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px">
+      <h3 style="font-size:16px">Filters</h3>
+      <a href="#" style="font-size:12px;color:var(--gm-green-600)">Clear all</a>
+    </div>
+    <div class="filter-section">
+      <div class="filter-title">Category</div>
+      <label class="filter-option"><input type="checkbox" checked> Food & Beverages <span class="count">842</span></label>
+      <label class="filter-option"><input type="checkbox"> Fashion & Textiles <span class="count">531</span></label>
+      <label class="filter-option"><input type="checkbox"> Health & Wellness <span class="count">327</span></label>
+      <label class="filter-option"><input type="checkbox"> Home & Garden <span class="count">289</span></label>
+      <label class="filter-option"><input type="checkbox"> Arts & Crafts <span class="count">245</span></label>
+      <label class="filter-option"><input type="checkbox"> Technology <span class="count">156</span></label>
+      <label class="filter-option"><input type="checkbox"> Services <span class="count">412</span></label>
+      <label class="filter-option"><input type="checkbox"> Travel & Experiences <span class="count">198</span></label>
+    </div>
+    <div class="filter-section">
+      <div class="filter-title">Listing Type</div>
+      <label class="filter-option"><input type="checkbox" checked> Shop (B2C) <span class="count">1,240</span></label>
+      <label class="filter-option"><input type="checkbox"> Source (B2B) <span class="count">680</span></label>
+      <label class="filter-option"><input type="checkbox"> Events <span class="count">95</span></label>
+      <label class="filter-option"><input type="checkbox"> Services <span class="count">412</span></label>
+      <label class="filter-option"><input type="checkbox"> Campaigns <span class="count">67</span></label>
+    </div>
+    <div class="filter-section">
+      <div class="filter-title">Good Market Level</div>
+      <label class="filter-option"><input type="checkbox"> ★★★★★ Level 5 <span class="count">48</span></label>
+      <label class="filter-option"><input type="checkbox"> ★★★★ Level 4 <span class="count">186</span></label>
+      <label class="filter-option"><input type="checkbox"> ★★★ Level 3 <span class="count">524</span></label>
+      <label class="filter-option"><input type="checkbox"> ★★ Level 2 <span class="count">890</span></label>
+      <label class="filter-option"><input type="checkbox"> ★ Level 1 <span class="count">1,102</span></label>
+    </div>
+    <div class="filter-section">
+      <div class="filter-title">Certifications</div>
+      <label class="filter-option"><input type="checkbox"> Organic <span class="count">612</span></label>
+      <label class="filter-option"><input type="checkbox"> Fair Trade <span class="count">398</span></label>
+      <label class="filter-option"><input type="checkbox"> B-Corp <span class="count">87</span></label>
+      <label class="filter-option"><input type="checkbox"> Rainforest Alliance <span class="count">124</span></label>
+    </div>
+    <div class="filter-section">
+      <div class="filter-title">Price Range (USD)</div>
+      <div class="price-range">
+        <input type="number" placeholder="Min" value="0">
+        <span style="color:var(--gm-earth-400)">—</span>
+        <input type="number" placeholder="Max" value="500">
+      </div>
+    </div>
+    <div class="filter-section">
+      <div class="filter-title">Location</div>
+      <select class="form-select" style="width:100%;font-size:13px">
+        <option>All Countries</option><option>Sri Lanka</option><option>Kenya</option><option>India</option><option>Netherlands</option><option>Portugal</option><option>United Kingdom</option>
+      </select>
+    </div>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="mp-main">
+    <div class="mp-topbar">
+      <div>
+        <span style="font-size:14px;color:var(--gm-earth-500)">Showing <strong style="color:var(--gm-earth-800)">2,750</strong> results</span>
+      </div>
+      <div style="display:flex;align-items:center;gap:16px">
+        <select class="form-select" style="padding:6px 12px;font-size:13px">
+          <option>Sort: Most Relevant</option><option>Price: Low to High</option><option>Price: High to Low</option><option>Newest First</option><option>Best Rated</option>
+        </select>
+        <div class="view-toggle">
+          <button class="active" title="Grid">▦</button>
+          <button title="List">☰</button>
+          <button title="Map">◎</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Active Filters -->
+    <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:20px">
+      <span class="tag">Food & Beverages ✕</span>
+      <span class="tag">Shop (B2C) ✕</span>
+    </div>
+
+    <!-- Product Grid -->
+    <div class="product-grid">
+      <a href="product-detail.html" class="card" style="text-decoration:none;color:inherit">
+        <div style="position:relative"><img class="card-img" src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=400&h=300&fit=crop" alt="Ceylon Cinnamon"><span class="badge badge-green" style="position:absolute;top:12px;left:12px">Organic</span><button style="position:absolute;top:12px;right:12px;background:#fff;border:none;border-radius:50%;width:32px;height:32px;display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow-sm);cursor:pointer">♡</button></div>
+        <div class="card-body"><h4 style="font-size:15px;margin-bottom:4px;font-family:var(--font-body)">True Ceylon Cinnamon Sticks</h4><p class="text-sm text-muted">Green Harvest Organics • Sri Lanka</p><div style="display:flex;justify-content:space-between;align-items:center;margin-top:10px"><strong style="color:var(--gm-green-700)">$12.50</strong><span class="text-xs" style="color:var(--gm-amber-500)">★★★★★ (48)</span></div></div>
+      </a>
+      <a href="product-detail.html" class="card" style="text-decoration:none;color:inherit">
+        <div style="position:relative"><img class="card-img" src="https://images.unsplash.com/photo-1611930022073-b7a4ba5fcccd?w=400&h=300&fit=crop" alt="Jute Bag"><span class="badge badge-amber" style="position:absolute;top:12px;left:12px">Fair Trade</span><button style="position:absolute;top:12px;right:12px;background:#fff;border:none;border-radius:50%;width:32px;height:32px;display:flex;align-items:center;justify-content:center;box-shadow:var(--shadow-sm);cursor:pointer">♡</button></div>
+        <div class="card-body"><h4 style="font-size:15px;margin-bottom:4px;font-family:var(--font-body)">Handwoven Jute Tote Bag</h4><p class="text-sm text-muted">Artisan Collective • Kenya</p><div style="display:flex;justify-content:space-between;align-items:center;margin-top:10px"><strong style="color:var(--gm-green-700)">$28.00</strong><span class="text-xs" style="color:var(--gm-amber-500)">★★★★☆ (32)</span></div></div>
+      </a>
+      <a href="product-detail.html" class="card" style="text-decoration:none;color:inherit">
+        <div style="position:relative"><img class="card-img" src="https://images.unsplash.com/photo-1556228578-0d85b1a4d571?w=400&h=300&fit=crop" alt="Essential Oil"><span class="badge badge-green" style="position:absolute;top:12px;left:12px">Organic</span></div>
+        <div class="card-body"><h4 style="font-size:15px;margin-bottom:4px;font-family:var(--font-body)">Lemongrass Essential Oil</h4><p class="text-sm text-muted">Nature's Touch Ayurveda • India</p><div style="display:flex;justify-content:space-between;align-items:center;margin-top:10px"><strong style="color:var(--gm-green-700)">$8.75</strong><span class="text-xs" style="color:var(--gm-amber-500)">★★★★★ (87)</span></div></div>
+      </a>
+      <a href="product-detail.html" class="card" style="text-decoration:none;color:inherit">
+        <div style="position:relative"><img class="card-img" src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=400&h=300&fit=crop" alt="Bamboo Watch"><span class="badge badge-sky" style="position:absolute;top:12px;left:12px">Eco</span></div>
+        <div class="card-body"><h4 style="font-size:15px;margin-bottom:4px;font-family:var(--font-body)">Bamboo Minimalist Watch</h4><p class="text-sm text-muted">Green Time Co. • Portugal</p><div style="display:flex;justify-content:space-between;align-items:center;margin-top:10px"><strong style="color:var(--gm-green-700)">$45.00</strong><span class="text-xs" style="color:var(--gm-amber-500)">★★★★☆ (19)</span></div></div>
+      </a>
+      <a href="product-detail.html" class="card" style="text-decoration:none;color:inherit">
+        <div style="position:relative"><img class="card-img" src="https://images.unsplash.com/photo-1607004468138-e7e23ea26947?w=400&h=300&fit=crop" alt="Organic Tea"><span class="badge badge-green" style="position:absolute;top:12px;left:12px">Organic</span></div>
+        <div class="card-body"><h4 style="font-size:15px;margin-bottom:4px;font-family:var(--font-body)">Single Estate Green Tea</h4><p class="text-sm text-muted">Ceylon Tea Gardens • Sri Lanka</p><div style="display:flex;justify-content:space-between;align-items:center;margin-top:10px"><strong style="color:var(--gm-green-700)">$15.00</strong><span class="text-xs" style="color:var(--gm-amber-500)">★★★★★ (156)</span></div></div>
+      </a>
+      <a href="product-detail.html" class="card" style="text-decoration:none;color:inherit">
+        <div style="position:relative"><img class="card-img" src="https://images.unsplash.com/photo-1602143407151-7111542de6e8?w=400&h=300&fit=crop" alt="Water Bottle"><span class="badge badge-sky" style="position:absolute;top:12px;left:12px">Zero Waste</span></div>
+        <div class="card-body"><h4 style="font-size:15px;margin-bottom:4px;font-family:var(--font-body)">Stainless Steel Water Bottle</h4><p class="text-sm text-muted">Zero Waste Co. • Netherlands</p><div style="display:flex;justify-content:space-between;align-items:center;margin-top:10px"><strong style="color:var(--gm-green-700)">$22.00</strong><span class="text-xs" style="color:var(--gm-amber-500)">★★★★★ (73)</span></div></div>
+      </a>
+    </div>
+
+    <!-- Pagination -->
+    <div style="display:flex;justify-content:center;align-items:center;gap:8px;margin-top:40px">
+      <button class="btn btn-ghost btn-sm" disabled>← Previous</button>
+      <button class="btn btn-sm btn-primary">1</button>
+      <button class="btn btn-sm btn-ghost">2</button>
+      <button class="btn btn-sm btn-ghost">3</button>
+      <span style="color:var(--gm-earth-400)">...</span>
+      <button class="btn btn-sm btn-ghost">46</button>
+      <button class="btn btn-sm btn-ghost">Next →</button>
+    </div>
+  </main>
+</div>
+
+<div id="gm-footer"></div>
+<script src="../assets/js/components.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="gm-depth" content="../"><title>Messages — Good Market</title><link rel="stylesheet" href="../assets/css/design-system.css">
+<style>.dash-sidebar{width:260px;background:#fff;border-right:1px solid var(--gm-earth-200);min-height:calc(100vh - 72px);padding:24px 0;position:sticky;top:72px}.dash-user{padding:0 20px 20px;border-bottom:1px solid var(--gm-earth-100);margin-bottom:16px;display:flex;align-items:center;gap:12px}.dash-link{display:flex;align-items:center;gap:10px;padding:10px 24px;font-size:14px;color:var(--gm-earth-600);text-decoration:none;transition:all .15s}.dash-link:hover{background:var(--gm-green-50);color:var(--gm-green-700)}.dash-link.active{background:var(--gm-green-50);color:var(--gm-green-700);font-weight:600;border-left:3px solid var(--gm-green-500)}.msg-layout{display:grid;grid-template-columns:320px 1fr;border:1px solid var(--gm-earth-200);border-radius:var(--radius-lg);background:#fff;min-height:500px;overflow:hidden}.msg-list{border-right:1px solid var(--gm-earth-200)}.msg-item{display:flex;gap:12px;padding:16px;border-bottom:1px solid var(--gm-earth-100);cursor:pointer;transition:background .15s}.msg-item:hover,.msg-item.active{background:var(--gm-green-50)}.msg-content{padding:24px;display:flex;flex-direction:column}.msg-bubble{max-width:70%;padding:12px 16px;border-radius:16px;font-size:14px;line-height:1.6;margin-bottom:8px}.msg-sent{background:var(--gm-green-600);color:#fff;align-self:flex-end;border-bottom-right-radius:4px}.msg-received{background:var(--gm-earth-100);color:var(--gm-earth-800);align-self:flex-start;border-bottom-left-radius:4px}</style></head><body><div id="gm-nav"></div>
+<div style="display:flex">
+  <aside class="dash-sidebar">
+    <div class="dash-user"><div style="width:40px;height:40px;border-radius:50%;background:var(--gm-green-200);display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--gm-green-800)">JD</div><div><strong style="font-size:14px">John Doe</strong><p style="font-size:11px;color:var(--gm-earth-500)">Personal Account</p></div></div>
+    <a href="dashboard.html" class="dash-link">📊 Dashboard</a><a href="favorites.html" class="dash-link">♡ Favorites</a><a href="orders.html" class="dash-link">📦 My Orders</a><a href="cart.html" class="dash-link">🛒 Cart</a><a href="messages.html" class="dash-link active">💬 Messages</a><a href="following.html" class="dash-link">👥 Following</a><a href="reviews.html" class="dash-link">⭐ My Reviews</a><a href="settings.html" class="dash-link">⚙️ Settings</a>
+  </aside>
+  <main class="page-content">
+    <div class="page-header"><h1 class="page-title">Messages</h1></div>
+    <div class="msg-layout">
+      <div class="msg-list">
+        <div style="padding:12px;border-bottom:1px solid var(--gm-earth-200)"><input class="form-input" placeholder="Search conversations..." style="font-size:13px"></div>
+        <div class="msg-item active">
+          <div style="width:36px;height:36px;border-radius:50%;background:var(--gm-green-200);display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--gm-green-800);font-size:13px;flex-shrink:0">GH</div>
+          <div style="flex:1;min-width:0"><div style="display:flex;justify-content:space-between"><strong style="font-size:13px">Green Harvest Organics</strong><span style="font-size:11px;color:var(--gm-earth-400)">2h ago</span></div><p style="font-size:12px;color:var(--gm-earth-500);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">Your order has been shipped! Track...</p></div>
+        </div>
+        <div class="msg-item">
+          <div style="width:36px;height:36px;border-radius:50%;background:var(--gm-amber-100);display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--gm-amber-600);font-size:13px;flex-shrink:0">AC</div>
+          <div style="flex:1;min-width:0"><div style="display:flex;justify-content:space-between"><strong style="font-size:13px">Artisan Collective</strong><span style="font-size:11px;color:var(--gm-earth-400)">1d ago</span></div><p style="font-size:12px;color:var(--gm-earth-500);white-space:nowrap;overflow:hidden;text-overflow:ellipsis">Thank you for your purchase!</p></div>
+        </div>
+      </div>
+      <div class="msg-content">
+        <div style="padding-bottom:16px;border-bottom:1px solid var(--gm-earth-100);margin-bottom:16px;display:flex;align-items:center;gap:12px"><div style="width:36px;height:36px;border-radius:50%;background:var(--gm-green-200);display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--gm-green-800);font-size:13px">GH</div><div><strong style="font-size:14px">Green Harvest Organics</strong><p style="font-size:11px;color:var(--gm-earth-500)">Ratnapura, Sri Lanka</p></div></div>
+        <div style="flex:1;overflow-y:auto;display:flex;flex-direction:column;gap:4px">
+          <div class="msg-bubble msg-sent">Hi, I'd like to know about bulk pricing for the Ceylon Cinnamon?</div>
+          <div class="msg-bubble msg-received">Hello! Thank you for your interest. For orders above 5kg, we offer 15% bulk discount. Would you like a custom quote?</div>
+          <div class="msg-bubble msg-sent">Yes please! I'm looking at approximately 10kg for my shop.</div>
+          <div class="msg-bubble msg-received">Your order has been shipped! Tracking number: LK2026GM4821. Expected delivery: March 25.</div>
+        </div>
+        <div style="padding-top:16px;border-top:1px solid var(--gm-earth-100);display:flex;gap:8px;margin-top:auto"><input class="form-input" placeholder="Type a message..." style="flex:1"><button class="btn btn-primary btn-sm">Send</button></div>
+      </div>
+    </div>
+  </main>
+</div>
+<div id="gm-footer"></div><script src="../assets/js/components.js"></script></body></html>

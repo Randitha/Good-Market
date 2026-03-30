@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="gm-depth" content="../"><meta name="gm-active" content="marketplace">
+  <title>True Ceylon Cinnamon — Good Market</title>
+  <link rel="stylesheet" href="../assets/css/design-system.css">
+  <style>
+    .pd-layout { max-width: 1200px; margin: 0 auto; padding: 32px 24px; }
+    .pd-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; }
+    .pd-gallery { display: grid; grid-template-columns: 80px 1fr; gap: 12px; }
+    .pd-thumbs { display: flex; flex-direction: column; gap: 8px; }
+    .pd-thumb { width: 80px; height: 80px; border-radius: var(--radius-md); object-fit: cover; border: 2px solid transparent; cursor: pointer; opacity: .6; transition: all .2s; }
+    .pd-thumb:hover, .pd-thumb.active { opacity: 1; border-color: var(--gm-green-500); }
+    .pd-main-img { width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: var(--radius-xl); }
+    .pd-info h1 { font-size: 28px; margin-bottom: 8px; }
+    .pd-seller { display: flex; align-items: center; gap: 10px; margin-bottom: 20px; padding-bottom: 20px; border-bottom: 1px solid var(--gm-earth-200); }
+    .pd-price { font-size: 32px; font-family: var(--font-display); color: var(--gm-green-700); margin-bottom: 4px; }
+    .pd-price-note { font-size: 13px; color: var(--gm-earth-500); margin-bottom: 20px; }
+    .pd-qty { display: flex; align-items: center; gap: 0; border: 1.5px solid var(--gm-earth-300); border-radius: var(--radius-md); overflow: hidden; margin-bottom: 20px; width: fit-content; }
+    .pd-qty button { width: 40px; height: 40px; border: none; background: var(--gm-earth-100); font-size: 18px; cursor: pointer; }
+    .pd-qty input { width: 50px; height: 40px; border: none; text-align: center; font-size: 15px; font-weight: 600; }
+    .pd-actions { display: flex; gap: 12px; margin-bottom: 28px; }
+    .pd-features { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 24px; }
+    .pd-feature { display: flex; align-items: center; gap: 8px; font-size: 13px; color: var(--gm-earth-600); padding: 10px; background: var(--gm-earth-50); border-radius: var(--radius-md); }
+    .pd-feature .icon { width: 20px; height: 20px; color: var(--gm-green-600); }
+    .pd-tabs-content { margin-top: 48px; }
+    .review-item { padding: 20px 0; border-bottom: 1px solid var(--gm-earth-100); }
+    .review-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+  </style>
+</head>
+<body>
+<div id="gm-nav"></div>
+
+<div class="pd-layout">
+  <!-- Breadcrumb -->
+  <div style="display:flex;gap:8px;font-size:13px;color:var(--gm-earth-500);margin-bottom:24px">
+    <a href="home.html">Home</a> <span>/</span>
+    <a href="marketplace.html">Marketplace</a> <span>/</span>
+    <a href="marketplace.html?cat=food">Food & Beverages</a> <span>/</span>
+    <span style="color:var(--gm-earth-800)">True Ceylon Cinnamon</span>
+  </div>
+
+  <div class="pd-grid">
+    <!-- Gallery -->
+    <div class="pd-gallery">
+      <div class="pd-thumbs">
+        <img class="pd-thumb active" src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=100&h=100&fit=crop" alt="">
+        <img class="pd-thumb" src="https://images.unsplash.com/photo-1587049352851-8d4e89133924?w=100&h=100&fit=crop" alt="">
+        <img class="pd-thumb" src="https://images.unsplash.com/photo-1541855492-581f618108cd?w=100&h=100&fit=crop" alt="">
+      </div>
+      <img class="pd-main-img" src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=600&h=600&fit=crop" alt="Ceylon Cinnamon">
+    </div>
+
+    <!-- Info -->
+    <div class="pd-info">
+      <div style="display:flex;gap:6px;margin-bottom:12px">
+        <span class="badge badge-green">✓ Good Market Approved</span>
+        <span class="badge badge-green">Organic</span>
+        <span class="badge badge-amber">Level 4</span>
+      </div>
+      <h1>True Ceylon Cinnamon Sticks — 100g</h1>
+      <div class="pd-seller">
+        <div style="width:36px;height:36px;border-radius:50%;background:var(--gm-green-200);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:14px;color:var(--gm-green-800)">GH</div>
+        <div>
+          <a href="enterprise-profile.html" style="font-weight:600;font-size:14px">Green Harvest Organics</a>
+          <div style="font-size:12px;color:var(--gm-earth-500)">Ratnapura, Sri Lanka • ★★★★★ (48 reviews)</div>
+        </div>
+      </div>
+      <div class="pd-price">$12.50</div>
+      <div class="pd-price-note">Free shipping on orders over $50 • Ships in 2–5 business days</div>
+
+      <div class="pd-qty">
+        <button>−</button>
+        <input type="number" value="1" min="1">
+        <button>+</button>
+      </div>
+      <div class="pd-actions">
+        <a href="../buyer/cart.html" class="btn btn-primary btn-lg" style="flex:1">Add to Cart</a>
+        <button class="btn btn-secondary btn-lg">♡ Save</button>
+        <button class="btn btn-ghost btn-lg" title="Share">↗</button>
+      </div>
+
+      <div class="pd-features">
+        <div class="pd-feature"><span class="icon">🌱</span> 100% Organic Certified</div>
+        <div class="pd-feature"><span class="icon">🤝</span> Fair Trade Sourced</div>
+        <div class="pd-feature"><span class="icon">📦</span> Plastic-Free Packaging</div>
+        <div class="pd-feature"><span class="icon">🌍</span> Carbon Neutral Shipping</div>
+      </div>
+
+      <div style="background:var(--gm-green-50);border-radius:var(--radius-lg);padding:20px;margin-bottom:20px">
+        <h4 style="font-size:14px;font-family:var(--font-body);margin-bottom:8px;color:var(--gm-green-800)">About this product</h4>
+        <p style="font-size:14px;color:var(--gm-earth-600);line-height:1.7">Hand-harvested True Ceylon Cinnamon (Cinnamomum verum) from our organic farm in Ratnapura, Sri Lanka. Delicate, sweet flavour with low coumarin content. Perfect for baking, beverages, and Ayurvedic remedies. Each batch is traced from tree to package.</p>
+      </div>
+
+      <div style="font-size:13px;color:var(--gm-earth-500)">
+        <strong style="color:var(--gm-earth-700)">People & Planet:</strong> This enterprise employs 45 local farmers with fair wages, uses only organic farming methods, and packages in biodegradable materials. 5% of proceeds fund local school programs.
+      </div>
+    </div>
+  </div>
+
+  <!-- Tabs Section -->
+  <div class="pd-tabs-content">
+    <div class="tabs">
+      <a class="tab active">Description</a>
+      <a class="tab">Reviews (48)</a>
+      <a class="tab">People & Planet</a>
+      <a class="tab">Shipping & Returns</a>
+    </div>
+
+    <div style="padding:32px 0">
+      <h3 style="font-size:18px;margin-bottom:16px">Customer Reviews</h3>
+      <div class="review-item">
+        <div class="review-header">
+          <div style="display:flex;align-items:center;gap:10px"><div style="width:32px;height:32px;border-radius:50%;background:var(--gm-sky-100);display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:var(--gm-sky-600)">JD</div><strong style="font-size:14px">Jane D.</strong><span class="text-xs text-muted">2 weeks ago</span></div>
+          <span style="color:var(--gm-amber-400);font-size:14px">★★★★★</span>
+        </div>
+        <p style="font-size:14px;color:var(--gm-earth-600);line-height:1.7">The best cinnamon I've ever tasted. You can tell it's the real deal — so different from cassia. Beautiful packaging too, completely plastic-free. Will order again!</p>
+      </div>
+      <div class="review-item">
+        <div class="review-header">
+          <div style="display:flex;align-items:center;gap:10px"><div style="width:32px;height:32px;border-radius:50%;background:var(--gm-amber-100);display:flex;align-items:center;justify-content:center;font-size:12px;font-weight:700;color:var(--gm-amber-600)">MP</div><strong style="font-size:14px">Marco P.</strong><span class="text-xs text-muted">1 month ago</span></div>
+          <span style="color:var(--gm-amber-400);font-size:14px">★★★★☆</span>
+        </div>
+        <p style="font-size:14px;color:var(--gm-earth-600);line-height:1.7">Great quality cinnamon. Shipping took a bit longer than expected but well worth the wait. Love supporting enterprises that truly care about sustainability.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="gm-footer"></div>
+<script src="../assets/js/components.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="gm-depth" content="../"><title>Dashboard — Good Market</title><link rel="stylesheet" href="../assets/css/design-system.css">
+<style>.dash-sidebar{width:260px;background:#fff;border-right:1px solid var(--gm-earth-200);min-height:calc(100vh - 72px);padding:24px 0;position:sticky;top:72px}.dash-user{padding:0 20px 20px;border-bottom:1px solid var(--gm-earth-100);margin-bottom:16px;display:flex;align-items:center;gap:12px}.dash-link{display:flex;align-items:center;gap:10px;padding:10px 24px;font-size:14px;color:var(--gm-earth-600);text-decoration:none;transition:all .15s}.dash-link:hover{background:var(--gm-green-50);color:var(--gm-green-700)}.dash-link.active{background:var(--gm-green-50);color:var(--gm-green-700);font-weight:600;border-left:3px solid var(--gm-green-500)}.quick-stat{background:#fff;border:1px solid var(--gm-earth-200);border-radius:var(--radius-lg);padding:20px;text-align:center}.quick-stat-val{font-family:var(--font-display);font-size:28px;color:var(--gm-green-600)}.quick-stat-label{font-size:12px;color:var(--gm-earth-500);margin-top:4px}</style></head><body><div id="gm-nav"></div>
+<div style="display:flex">
+  <aside class="dash-sidebar">
+    <div class="dash-user"><div style="width:40px;height:40px;border-radius:50%;background:var(--gm-green-200);display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--gm-green-800)">JD</div><div><strong style="font-size:14px">John Doe</strong><p style="font-size:11px;color:var(--gm-earth-500)">Personal Account</p></div></div>
+    <a href="dashboard.html" class="dash-link active">📊 Dashboard</a><a href="favorites.html" class="dash-link">♡ Favorites</a><a href="orders.html" class="dash-link">📦 My Orders</a><a href="cart.html" class="dash-link">🛒 Cart</a><a href="messages.html" class="dash-link">💬 Messages</a><a href="following.html" class="dash-link">👥 Following</a><a href="reviews.html" class="dash-link">⭐ My Reviews</a><a href="settings.html" class="dash-link">⚙️ Settings</a>
+  </aside>
+  <main class="page-content">
+    <div class="page-header"><h1 class="page-title">Welcome back, John!</h1><p class="page-subtitle">Here's what's happening in your Good Market community</p></div>
+    <div class="grid grid-4 gap-4" style="margin-bottom:32px">
+      <div class="quick-stat"><div class="quick-stat-val">5</div><div class="quick-stat-label">Active Orders</div></div>
+      <div class="quick-stat"><div class="quick-stat-val">8</div><div class="quick-stat-label">Saved Items</div></div>
+      <div class="quick-stat"><div class="quick-stat-val">12</div><div class="quick-stat-label">Following</div></div>
+      <div class="quick-stat"><div class="quick-stat-val">3</div><div class="quick-stat-label">Reviews Given</div></div>
+    </div>
+    <div class="grid grid-2 gap-6">
+      <div style="background:#fff;border:1px solid var(--gm-earth-200);border-radius:var(--radius-lg);padding:24px">
+        <h3 style="font-size:16px;margin-bottom:16px;font-family:var(--font-body);font-weight:600">Recent Orders</h3>
+        <div style="display:flex;align-items:center;gap:12px;padding:12px 0;border-bottom:1px solid var(--gm-earth-100)"><img src="https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=80&h=80&fit=crop" style="width:40px;height:40px;border-radius:6px;object-fit:cover" alt=""><div style="flex:1"><strong style="font-size:13px">#GM-2026-4821</strong><p style="font-size:11px;color:var(--gm-earth-500)">3 items • $62.00</p></div><span class="badge badge-amber" style="font-size:10px">Processing</span></div>
+        <div style="display:flex;align-items:center;gap:12px;padding:12px 0"><img src="https://images.unsplash.com/photo-1607004468138-e7e23ea26947?w=80&h=80&fit=crop" style="width:40px;height:40px;border-radius:6px;object-fit:cover" alt=""><div style="flex:1"><strong style="font-size:13px">#GM-2026-4756</strong><p style="font-size:11px;color:var(--gm-earth-500)">1 item • $15.00</p></div><span class="badge badge-sky" style="font-size:10px">Shipped</span></div>
+        <a href="orders.html" style="display:block;text-align:center;margin-top:12px;font-size:13px">View all orders →</a>
+      </div>
+      <div style="background:#fff;border:1px solid var(--gm-earth-200);border-radius:var(--radius-lg);padding:24px">
+        <h3 style="font-size:16px;margin-bottom:16px;font-family:var(--font-body);font-weight:600">Community Updates</h3>
+        <div style="padding:12px 0;border-bottom:1px solid var(--gm-earth-100)"><div style="display:flex;align-items:center;gap:8px;margin-bottom:4px"><div style="width:24px;height:24px;border-radius:50%;background:var(--gm-green-100);display:flex;align-items:center;justify-content:center;font-size:10px">🌿</div><strong style="font-size:12px">Organic PGS Network</strong></div><p style="font-size:13px;color:var(--gm-earth-600)">New organic certification guide published</p><span style="font-size:11px;color:var(--gm-earth-400)">2 hours ago</span></div>
+        <div style="padding:12px 0"><div style="display:flex;align-items:center;gap:8px;margin-bottom:4px"><div style="width:24px;height:24px;border-radius:50%;background:var(--gm-amber-100);display:flex;align-items:center;justify-content:center;font-size:10px">🎉</div><strong style="font-size:12px">Green Harvest Organics</strong></div><p style="font-size:13px;color:var(--gm-earth-600)">Added 3 new products to their marketplace</p><span style="font-size:11px;color:var(--gm-earth-400)">1 day ago</span></div>
+      </div>
+    </div>
+  </main>
+</div>
+<div id="gm-footer"></div><script src="../assets/js/components.js"></script></body></html>
